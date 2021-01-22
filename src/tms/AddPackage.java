@@ -139,6 +139,8 @@ public class AddPackage extends JFrame implements ActionListener {
             BufferedReader br = new BufferedReader(fr);
             
             if (br.readLine() == null) {
+                fr.close();
+                br.close();
                 return 1;
             }
 

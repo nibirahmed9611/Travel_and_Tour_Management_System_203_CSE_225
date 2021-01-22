@@ -161,6 +161,8 @@ public class UserEnrolledHotel extends JFrame implements ActionListener{
                 if(line.contains(" ")) {
                     String[] split = line.split(" ");
                     if(id.equalsIgnoreCase(split[0])){
+                        fr.close();
+                        br.close();
                         return split[1];
                     }
                 }
@@ -192,6 +194,8 @@ public class UserEnrolledHotel extends JFrame implements ActionListener{
                     String[] split = line.split(" ");
 
                     if(split[0].equals(userID) ){
+                        fr.close();
+                        br.close();
                         return split[1];
                     }
                 } 

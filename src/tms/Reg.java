@@ -157,6 +157,8 @@ public class Reg extends JFrame implements ActionListener {
                 if(line.contains(" ")) {
                     String[] split = line.split(" ");
                     if(username.equalsIgnoreCase(split[4])){
+                        fr.close();
+                        br.close();
                         return true;
                     }
                 }
@@ -184,6 +186,8 @@ public class Reg extends JFrame implements ActionListener {
             BufferedReader br = new BufferedReader(fr);
             
             if (br.readLine() == null) {
+                fr.close();
+                br.close();
                 return 1;
             }
 

@@ -195,6 +195,8 @@ public class UserDashboard extends JFrame implements ActionListener {
                     String[] split = line.split(" ");
                     String packageid = split[0];
                     if(id.equalsIgnoreCase(packageid)){
+                        fr.close();
+                        br.close();
                         return true;
                     }
                 }
@@ -226,6 +228,8 @@ public class UserDashboard extends JFrame implements ActionListener {
                     String userid = split[1];
                     String packageid = split[2];
                     if(packageID.equalsIgnoreCase(packageid) && this.getLoggedInUser().equalsIgnoreCase(userid)){
+                        fr.close();
+                        br.close();
                         return true;
                     }
                 }
@@ -253,6 +257,8 @@ public class UserDashboard extends JFrame implements ActionListener {
             BufferedReader br = new BufferedReader(fr);
             
             if (br.readLine() == null) {
+                fr.close();
+                br.close();
                 return 1;
             }
             
@@ -381,6 +387,8 @@ public class UserDashboard extends JFrame implements ActionListener {
                     String[] split = line.split(" ");
                     String packageid = split[0];
                     if(id.equalsIgnoreCase(packageid)){
+                        fr.close();
+                        br.close();
                         return true;
                     }
                 }
@@ -412,6 +420,8 @@ public class UserDashboard extends JFrame implements ActionListener {
                     String userid = split[1];
                     String packageid = split[2];
                     if(hotelID.equalsIgnoreCase(packageid) && this.getLoggedInUser().equalsIgnoreCase(userid)){
+                        fr.close();
+                        br.close();
                         return true;
                     }
                 }
@@ -439,6 +449,8 @@ public class UserDashboard extends JFrame implements ActionListener {
             BufferedReader br = new BufferedReader(fr);
             
             if (br.readLine() == null) {
+                fr.close();
+                br.close();
                 return 1;
             }
             

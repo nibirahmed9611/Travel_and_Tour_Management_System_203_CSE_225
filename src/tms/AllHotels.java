@@ -133,9 +133,7 @@ public class AllHotels extends JFrame implements ActionListener{
             
             fr.close();
             br.close();
-            
-//            System.out.println("Ekhane Shesh");
-            
+                        
             return data;
         }
         catch (Exception ep) {
