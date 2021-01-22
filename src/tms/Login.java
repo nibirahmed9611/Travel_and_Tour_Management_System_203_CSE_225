@@ -183,6 +183,8 @@ public class Login extends JFrame implements ActionListener {
                     userID = split[0];
                     
                     if(username.equals(fusername) && pass.equals(fpass) ){
+                        fr.close();
+                        br.close();
                         this.userId = userID;
                         return 2;
                     }

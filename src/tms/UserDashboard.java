@@ -136,14 +136,7 @@ public class UserDashboard extends JFrame implements ActionListener {
         b10.addActionListener(this);
         bg.add(b10);
         
-//        b11 = new JButton("About");
-//        b11.setBackground(new Color(52,58,62));
-//        b11.setForeground(Color.white);
-//        b11.addActionListener(this);
-//        bg.add(b11);
-        
         b12 = new JButton("Logout");
-//        b12.setBounds(0, 465, 248, 40);
         b12.setBounds(0, 425, 248, 40);
         b12.setBackground(new Color(52,58,62));
         b12.setForeground(Color.white);
@@ -474,7 +467,6 @@ public class UserDashboard extends JFrame implements ActionListener {
                 String line; 
                 int flag = 0;
                 try {
-
                     File oldFile = new File(System.getProperty("user.dir") + "\\src\\tms\\storefiles\\user_hotel.txt");
                     File newFile = new File(System.getProperty("user.dir") + "\\src\\tms\\storefiles\\uhtemp.txt");
                     if(!newFile.exists()){
@@ -497,7 +489,7 @@ public class UserDashboard extends JFrame implements ActionListener {
                             }
                         }
                     }
-
+                    
                     fr.close();
                     br.close();
 
